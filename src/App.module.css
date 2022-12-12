@@ -1,0 +1,24 @@
+.wrapper {
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* essa propriedade ajusta o tamaho de fonta do mobile. precisa estar tudo em rem */
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+/* o tamanho de tela padrão é desktop(dimensionado nas propriedades acima) o @media trasnforma para dispositivo movel */
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
